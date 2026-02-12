@@ -16,5 +16,5 @@ jobs:
       - name: Wake Up E-MERN Authentication System (Project 2)
         run: curl -I https://mern-authentication-system-backend-8x74.onrender.com/health
 
-      - name: Wake Up Portfolio (Project 2)
+      - name: Wake Up DemoProject (Project 2)
         run: curl -I https://harshit-portfolio.onrender.com/health
