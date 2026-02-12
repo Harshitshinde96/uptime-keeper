@@ -1,0 +1,20 @@
+name: Wake Up All Apps
+
+on:
+  schedule:
+   # Run every 14 minutes (Render sleeps after 15m)
+    - cron: '*/14 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping_everything:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wake Up VertexCode (Project 1)
+        run: curl -I https://vertexcode-server.onrender.com/health
+
+      - name: Wake Up E-MERN Authentication System (Project 2)
+        run: curl -I https://mern-authentication-system-backend-8x74.onrender.com/health
+
+      - name: Wake Up Portfolio (Project 2)
+        run: curl -I https://harshit-portfolio.onrender.com/health
