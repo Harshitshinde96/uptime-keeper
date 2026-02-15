@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Wake Up VertexCode (Project 1)
-        run: curl -I https://vertexcode-server.onrender.com/health
+        run: curl -f https://vertexcode-server.onrender.com/health
 
       - name: Wake Up E-MERN Authentication System (Project 2)
-        run: curl -I https://mern-authentication-system-backend-8x74.onrender.com/health
+        run: curl -f https://mern-authentication-system-backend-8x74.onrender.com/health
 
       - name: Wake Up DemoProject (Project 2)
-        run: curl -I https://harshit-portfolio.onrender.com/health
+        run: curl -f https://harshit-portfolio.onrender.com/health
